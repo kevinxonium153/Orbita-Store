@@ -3,31 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Órbita Store — productos con estilo que te ponen en órbita.">
-  <title>Órbita Store</title>
+  <meta name="description" content="ÓRBITA — Mini CD llavero y cuadros de pared con NFC. Un toque contra tu celular y suena. Hecho en Honduras.">
+  <title>ÓRBITA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <!-- Encabezado -->
   <header class="header" id="inicio">
     <div class="container header__inner">
-      <a href="#inicio" class="logo" aria-label="Órbita Store, inicio">
-        <span class="logo__planet" aria-hidden="true"></span>
-        ÓRBITA<span class="logo__accent">STORE</span>
+      <a href="#inicio" class="logo" aria-label="ÓRBITA, inicio">
+        <svg class="brand-mark" viewBox="0 0 200 200" aria-hidden="true"><circle class="mark-ring" cx="100" cy="100" r="50" fill="none" stroke-width="9"/><ellipse class="mark-orbit" cx="100" cy="100" rx="88" ry="40" fill="none" stroke-width="9" transform="rotate(-28 100 100)"/><circle class="mark-dot" cx="171.6" cy="91.1" r="13"/></svg>
+        ÓRBITA
       </a>
 
       <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="#como-funciona" class="nav__link">Cómo funciona</a>
         <a href="#productos" class="nav__link">Productos</a>
-        <a href="#nosotros" class="nav__link">Nosotros</a>
         <a href="#contacto" class="nav__link">Contacto</a>
       </nav>
 
       <div class="header__actions">
         <button class="cart-btn" id="cartBtn" aria-label="Abrir carrito">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
           <span class="cart-btn__count" id="cartCount">0</span>
         </button>
         <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
@@ -40,108 +40,128 @@
   <main>
     <!-- Hero -->
     <section class="hero">
-      <div class="stars" aria-hidden="true"></div>
       <div class="container hero__inner">
         <div class="hero__text">
-          <p class="hero__eyebrow">Nueva colección 2026</p>
-          <h1 class="hero__title">Productos que te ponen <span class="gradient-text">en órbita</span></h1>
-          <p class="hero__subtitle">Diseño, calidad y estilo en cada pieza. Envíos a todo el país y pago contra entrega.</p>
+          <p class="eyebrow">Mini CD · Llavero · Cuadros · NFC</p>
+          <h1 class="hero__title">Tu álbum favorito, <em>en tus manos.</em></h1>
+          <p class="hero__subtitle">Mini CD llavero y cuadros de pared, ambos con NFC integrado. Un toque contra tu celular y suena — sin apps, sin cables. Producción limitada, hecha en Honduras.</p>
           <div class="hero__cta">
-            <a href="#productos" class="btn btn--primary">Ver productos</a>
-            <a href="#nosotros" class="btn btn--ghost">Conócenos</a>
+            <a href="#productos" class="btn btn--primary">Ver catálogo</a>
+            <a href="#como-funciona" class="btn btn--ghost">Cómo funciona</a>
           </div>
+          <p class="hero__note">Edición 01 · Producción limitada · Pago contra entrega</p>
         </div>
-        <div class="hero__visual" aria-hidden="true">
-          <div class="orbit orbit--1"><span class="satellite"></span></div>
-          <div class="orbit orbit--2"><span class="satellite"></span></div>
-          <div class="planet"></div>
+        <div class="hero__visual">
+          <span class="float-tag float-tag--nfc"><span class="dot"></span>NFC listo</span>
+          <span class="float-tag float-tag--play"><span class="dot"></span>▶ reproduciendo</span>
+          <div class="hero__photo">
+            <img src="img/mini-cd-llavero.jpg" alt="Mini CD llavero ÓRBITA con estuche transparente, disco, tarjeta y mini póster de portada" width="800" height="800">
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Beneficios -->
-    <section class="features">
-      <div class="container features__grid">
-        <div class="feature">
-          <span class="feature__icon" aria-hidden="true">🚚</span>
-          <h3>Envío rápido</h3>
-          <p>Entregas en 24–72 horas.</p>
+    <!-- Cómo funciona -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Cómo funciona</p>
+          <h2 class="section-title">Tres pistas, un solo toque.</h2>
         </div>
-        <div class="feature">
-          <span class="feature__icon" aria-hidden="true">💵</span>
-          <h3>Pago contra entrega</h3>
-          <p>Paga cuando recibas tu pedido.</p>
+        <ol class="tracklist">
+          <li class="track">
+            <span class="track__idx">01</span>
+            <div>
+              <h3>Toca tu llavero en tu celular</h3>
+              <p>El chip NFC va escondido dentro del mini CD. Solo acerca el llavero a la parte trasera de tu teléfono, como al pagar sin contacto.</p>
+            </div>
+            <span class="track__dur">0:03</span>
+          </li>
+          <li class="track">
+            <span class="track__idx">02</span>
+            <div>
+              <h3>Se abre el álbum al instante</h3>
+              <p>Tu celular reconoce el tag y abre directo la playlist, el video o el álbum que programaste — en Spotify, YouTube o donde tú decidas.</p>
+            </div>
+            <span class="track__dur">0:02</span>
+          </li>
+          <li class="track">
+            <span class="track__idx">03</span>
+            <div>
+              <h3>Lo coleccionas y lo luces</h3>
+              <p>Cada edición trae portada, disco, mini póster y tarjeta — en un estuche real de bolsillo. Se engancha a tu mochila, llaves o bolso.</p>
+            </div>
+            <span class="track__dur">0:04</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Qué incluye -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Qué incluye cada edición</p>
+          <h2 class="section-title">Todo el ritual de un álbum físico, en tamaño de bolsillo.</h2>
         </div>
-        <div class="feature">
-          <span class="feature__icon" aria-hidden="true">🔒</span>
-          <h3>Compra segura</h3>
-          <p>Garantía en todos los productos.</p>
+        <div class="features">
+          <div class="feature">
+            <p class="feature__mark">Estuche</p>
+            <h3>Jewel case transparente</h3>
+            <p>Réplica fiel del CD clásico, con bisagra funcional y cadena para llavero.</p>
+          </div>
+          <div class="feature">
+            <p class="feature__mark">Chip</p>
+            <h3>NFC NTAG213/215</h3>
+            <p>Compatible con la gran mayoría de celulares Android e iPhone sin instalar nada.</p>
+          </div>
+          <div class="feature">
+            <p class="feature__mark">Arte</p>
+            <h3>Portada + mini póster</h3>
+            <p>Impresión a color con el arte de tu álbum o el de tu artista favorito.</p>
+          </div>
+          <div class="feature">
+            <p class="feature__mark">Extra</p>
+            <h3>Tarjeta coleccionable</h3>
+            <p>Tipo photocard, numerada, para tus álbumes por edición o por artista.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Productos -->
-    <section class="products" id="productos">
+    <section class="section" id="productos">
       <div class="container">
-        <div class="section-head">
-          <h2 class="section-title">Nuestros productos</h2>
+        <div class="catalog-head">
+          <div>
+            <p class="eyebrow">Colección Edición 01</p>
+            <h2 class="section-title">Catálogo</h2>
+          </div>
           <input type="search" class="search" id="search" placeholder="Buscar producto…" aria-label="Buscar producto">
         </div>
 
-        <div class="filters" id="filters" role="tablist" aria-label="Filtrar por categoría">
+        <div class="filters" id="filters" aria-label="Filtrar por categoría">
           <button class="filter is-active" data-category="todos">Todos</button>
-          <button class="filter" data-category="ropa">Ropa</button>
-          <button class="filter" data-category="accesorios">Accesorios</button>
-          <button class="filter" data-category="tecnologia">Tecnología</button>
+          <button class="filter" data-category="llaveros">Llaveros NFC</button>
+          <button class="filter" data-category="cuadros">Cuadros NFC</button>
+          <button class="filter" data-category="audio">Audio</button>
         </div>
 
         <div class="product-grid" id="productGrid"></div>
         <p class="empty-state" id="emptyState" hidden>No encontramos productos con ese criterio.</p>
-      </div>
-    </section>
-
-    <!-- Nosotros -->
-    <section class="about" id="nosotros">
-      <div class="container about__inner">
-        <div class="about__text">
-          <h2 class="section-title">Sobre Órbita</h2>
-          <p>Somos una tienda que nace con una idea simple: ofrecer productos con estilo, a buen precio y con una experiencia de compra fácil y confiable.</p>
-          <p>Cada producto es seleccionado pensando en ti. Si no te pone en órbita, no está en nuestra tienda.</p>
-        </div>
-        <ul class="stats">
-          <li><strong data-count="1200">0</strong><span>Clientes felices</span></li>
-          <li><strong data-count="150">0</strong><span>Productos</span></li>
-          <li><strong data-count="18">0</strong><span>Ciudades</span></li>
-        </ul>
+        <p class="catalog-note">Precios en Lempiras. Envío contra entrega en Tegucigalpa, San Pedro Sula y el resto del país.</p>
       </div>
     </section>
 
     <!-- Contacto -->
-    <section class="contact" id="contacto">
+    <section class="section contact" id="contacto">
       <div class="container contact__inner">
         <div>
-          <h2 class="section-title">Contáctanos</h2>
-          <p>¿Tienes preguntas sobre un pedido o un producto? Escríbenos y te respondemos lo antes posible.</p>
+          <p class="eyebrow">Contacto</p>
+          <h2 class="section-title">¿Listo para tu edición?</h2>
+          <p class="contact__lede">Escríbenos para apartar tu pieza, resolver dudas sobre compatibilidad NFC o cotizar un pedido personalizado. Pago contra entrega disponible en Tegucigalpa, San Pedro Sula y el resto del país.</p>
         </div>
-        <form class="form" id="contactForm" novalidate>
-          <div class="form__field">
-            <label for="name">Nombre</label>
-            <input id="name" name="name" type="text" required autocomplete="name">
-            <small class="form__error"></small>
-          </div>
-          <div class="form__field">
-            <label for="email">Correo</label>
-            <input id="email" name="email" type="email" required autocomplete="email">
-            <small class="form__error"></small>
-          </div>
-          <div class="form__field">
-            <label for="message">Mensaje</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <small class="form__error"></small>
-          </div>
-          <button type="submit" class="btn btn--primary btn--block">Enviar mensaje</button>
-          <p class="form__success" id="formSuccess" hidden>¡Gracias! Tu mensaje fue enviado.</p>
-        </form>
+        <div class="contact-links" id="contactLinks"></div>
       </div>
     </section>
   </main>
@@ -149,12 +169,12 @@
   <!-- Pie -->
   <footer class="footer">
     <div class="container footer__inner">
-      <p>© <span id="year"></span> Órbita Store. Todos los derechos reservados.</p>
-      <div class="footer__social">
-        <a href="#" aria-label="Instagram">Instagram</a>
-        <a href="#" aria-label="TikTok">TikTok</a>
-        <a href="#" aria-label="Facebook">Facebook</a>
-      </div>
+      <span class="logo logo--small">
+        <svg class="brand-mark" viewBox="0 0 200 200" aria-hidden="true"><circle class="mark-ring" cx="100" cy="100" r="50" fill="none" stroke-width="9"/><ellipse class="mark-orbit" cx="100" cy="100" rx="88" ry="40" fill="none" stroke-width="9" transform="rotate(-28 100 100)"/><circle class="mark-dot" cx="171.6" cy="91.1" r="13"/></svg>
+        ÓRBITA
+      </span>
+      <div class="footer__social" id="footerSocial"></div>
+      <span class="footer__note">© <span id="year"></span> ÓRBITA · Honduras · Producción limitada</span>
     </div>
   </footer>
 
@@ -162,17 +182,18 @@
   <div class="overlay" id="overlay" hidden></div>
   <aside class="cart" id="cart" aria-label="Carrito de compras" aria-hidden="true">
     <div class="cart__head">
-      <h2>Tu carrito</h2>
+      <h2>Tu pedido</h2>
       <button class="cart__close" id="cartClose" aria-label="Cerrar carrito">✕</button>
     </div>
     <ul class="cart__items" id="cartItems"></ul>
     <p class="cart__empty" id="cartEmpty">Tu carrito está vacío.</p>
     <div class="cart__foot">
       <div class="cart__total">
-        <span>Total</span>
+        <span>Subtotal</span>
         <strong id="cartTotal">L 0.00</strong>
       </div>
-      <button class="btn btn--primary btn--block" id="checkoutBtn">Finalizar compra</button>
+      <p class="cart__hint">+ envío contra entrega. Confirmamos tu pedido por WhatsApp.</p>
+      <button class="btn btn--primary btn--block" id="checkoutBtn">Pedir por WhatsApp</button>
       <button class="btn btn--ghost btn--block" id="clearCartBtn">Vaciar carrito</button>
     </div>
   </aside>
