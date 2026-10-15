@@ -5,7 +5,7 @@
 // ---------- Datos de contacto ----------
 // Cambia aquí y se actualiza en toda la página (contacto, pie y pedidos por WhatsApp).
 const CONTACT = {
-  whatsapp: "50498507015", // código de país + número, sin espacios ni "+". PENDIENTE: número real.
+  whatsapp: "50498507015", // código de país + número, sin espacios ni "+"
   whatsappLabel: "+504 9850-7015",
   instagram: "orbita.hn",
   tiktok: "orbita.hn",
