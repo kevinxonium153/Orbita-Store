@@ -418,6 +418,23 @@ function bindEvents() {
   $$(".nav__link").forEach((link) => link.addEventListener("click", () => toggleMenu(false)));
 }
 
+// ---------- Pantalla de carga ----------
+// Espera a que la página cargue y a que el logo termine de dibujarse.
+const LOADER_MIN_MS = 2000;
+const loaderStart = performance.now();
+
+function hideLoader() {
+  const loader = $("#loader");
+  if (!loader) return;
+  const wait = Math.max(0, LOADER_MIN_MS - (performance.now() - loaderStart));
+  setTimeout(() => {
+    loader.classList.add("is-done");
+    loader.addEventListener("transitionend", () => loader.remove(), { once: true });
+  }, wait);
+}
+
+window.addEventListener("load", hideLoader);
+
 // ---------- Inicio ----------
 document.addEventListener("DOMContentLoaded", () => {
   $("#year").textContent = new Date().getFullYear();

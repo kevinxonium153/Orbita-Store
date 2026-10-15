@@ -1134,3 +1134,84 @@ h3 {
     scroll-behavior: auto;
   }
 }
+
+/* ---------- Pantalla de carga ---------- */
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 18px;
+  background: var(--bg);
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  /* Respaldo: si el JavaScript no corre, se oculta sola */
+  animation: loader-out 0.5s ease 4s forwards;
+}
+
+.loader.is-done {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader__mark {
+  width: 96px;
+  height: 96px;
+}
+
+.loader__ring,
+.loader__orbit {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  stroke-linecap: round;
+}
+
+.loader__ring {
+  stroke: var(--ink);
+  animation: loader-draw 0.7s ease-out forwards;
+}
+
+.loader__orbit {
+  stroke: var(--accent);
+  animation: loader-draw 0.7s ease-out 0.45s forwards;
+}
+
+.loader__dot {
+  fill: var(--accent);
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: scale(0);
+  animation: loader-pop 0.35s cubic-bezier(0.3, 1.6, 0.6, 1) 1.05s forwards;
+}
+
+.loader__word {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.3em;
+  padding-left: 0.3em;
+  opacity: 0;
+  animation: loader-fade 0.5s ease 1.1s forwards;
+}
+
+@keyframes loader-draw {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes loader-pop {
+  to { transform: scale(1); }
+}
+
+@keyframes loader-fade {
+  to { opacity: 1; }
+}
+
+@keyframes loader-out {
+  to { opacity: 0; visibility: hidden; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loader {
+    display: none;
+  }
+}
