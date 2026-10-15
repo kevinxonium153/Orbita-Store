@@ -5,8 +5,8 @@
 // ---------- Datos de contacto ----------
 // Cambia aquí y se actualiza en toda la página (contacto, pie y pedidos por WhatsApp).
 const CONTACT = {
-  whatsapp: "50400000000", // código de país + número, sin espacios ni "+". PENDIENTE: número real.
-  whatsappLabel: "+504 0000-0000",
+  whatsapp: "50498507015", // código de país + número, sin espacios ni "+". PENDIENTE: número real.
+  whatsappLabel: "+504 9850-7015",
   instagram: "orbita.hn",
   tiktok: "orbita.hn",
   email: "hola@orbita.hn",
@@ -92,7 +92,7 @@ const PRODUCTS = [
     desc: "Audífonos inalámbricos con estuche de carga, cordón incluido y logo Órbita grabado. Empaque tipo caja de regalo.",
     type: "photo",
     image: "img/audifonos-tws.jpg",
-    alt: "Audífonos TWS Órbita, estuche blanco con logo grabado y cordón, sobre superficie oscura",
+    alt: "Audífonos TWS Órbita, estuche blanco, sobre superficie oscura",
     badge: "N.º 04",
   },
 ];
