@@ -453,6 +453,53 @@ function hideLoader() {
 
 window.addEventListener("load", hideLoader);
 
+// ---------- Carrusel del hero ----------
+// Cambia de foto cada 5 s; los puntos permiten elegir una y reinician el contador.
+const HERO_INTERVAL_MS = 5000;
+
+function initHeroCarousel() {
+  const carousel = $("#heroCarousel");
+  if (!carousel) return;
+  const slides = [...carousel.querySelectorAll("img")];
+  const dotsWrap = carousel.querySelector(".hero__dots");
+  if (slides.length < 2) return;
+
+  let current = 0;
+  let timer;
+
+  const dots = slides.map((_, i) => {
+    const dot = document.createElement("button");
+    dot.type = "button";
+    dot.className = "hero__dot";
+    dot.setAttribute("role", "tab");
+    dot.setAttribute("aria-label", `Foto ${i + 1} de ${slides.length}`);
+    dot.addEventListener("click", () => {
+      show(i);
+      start();
+    });
+    dotsWrap.appendChild(dot);
+    return dot;
+  });
+
+  function show(i) {
+    slides[current].classList.remove("is-active");
+    dots[current].classList.remove("is-active");
+    dots[current].setAttribute("aria-selected", "false");
+    current = i;
+    slides[current].classList.add("is-active");
+    dots[current].classList.add("is-active");
+    dots[current].setAttribute("aria-selected", "true");
+  }
+
+  function start() {
+    clearInterval(timer);
+    timer = setInterval(() => show((current + 1) % slides.length), HERO_INTERVAL_MS);
+  }
+
+  show(0);
+  start();
+}
+
 // ---------- Inicio ----------
 document.addEventListener("DOMContentLoaded", () => {
   $("#year").textContent = new Date().getFullYear();
@@ -460,4 +507,5 @@ document.addEventListener("DOMContentLoaded", () => {
   renderProducts();
   renderCart();
   bindEvents();
+  initHeroCarousel();
 });
