@@ -5,7 +5,7 @@
 // ---------- Datos de contacto ----------
 // Cambia aquí y se actualiza en toda la página (contacto, pie y pedidos por WhatsApp).
 const CONTACT = {
-  whatsapp: "50498507015", // código de país + número, sin espacios ni "+"
+  whatsapp: "+504 98507015", // código de país + número, sin espacios ni "+"
   whatsappLabel: "+504 9850-7015",
   instagram: "orbita.hn",
   tiktok: "orbita.hn",
@@ -23,7 +23,7 @@ const PRODUCTS = [
     note: "+ envío contra entrega",
     desc: "Un mini CD con tu portada, chip NFC programado a tu álbum o playlist. Estuche acrílico transparente y cadena de llavero.",
     type: "photo",
-    image: "img/mini-cd-llavero.jpg",
+    image: "img/P1.png",
     alt: "Mini CD llavero ÓRBITA edición Standard, estuche transparente con disco, portada y mini póster",
     badge: "N.º 01",
   },
@@ -35,7 +35,7 @@ const PRODUCTS = [
     note: "Set de 3 + envío",
     desc: "Set de tres mini CD por era o artista, con tarjetas coleccionables numeradas y empaque especial.",
     type: "photo",
-    image: "img/mini-cd-llavero.jpg",
+    image: "img/P2.png",
     alt: "Set de tres mini CD llavero ÓRBITA edición Fan Club con tarjetas numeradas",
     badge: "N.º 02",
     tint: "fanclub",
@@ -48,7 +48,7 @@ const PRODUCTS = [
     note: "+ envío contra entrega",
     desc: "Sube tu propia portada y audio. Ideal para artistas independientes, negocios o regalos con identidad propia.",
     type: "photo",
-    image: "img/mini-cd-llavero.jpg",
+    image: "img/P1.png",
     alt: "Mini CD llavero ÓRBITA edición Personalizada con arte y audio propios",
     badge: "N.º 03",
     tint: "custom",
@@ -60,7 +60,9 @@ const PRODUCTS = [
     price: 538,
     note: "+ envío contra entrega",
     desc: "Impresión enmarcada de tu portada y tracklist, con chip NFC oculto en el marco. Ideal para escritorio o repisa.",
-    type: "poster",
+    type: "photo",
+    image: "img/CuadroEjem.png",
+    alt: "Cuadro NFC ÓRBITA de 21×30 cm, con portada y tracklist, sobre repisa blanca",
     badge: "Chico",
   },
   {
@@ -70,7 +72,9 @@ const PRODUCTS = [
     price: 807,
     note: "+ envío contra entrega",
     desc: "El mismo diseño en tamaño mediano, pensado para pared — el punto medio entre detalle y presencia.",
-    type: "poster",
+    type: "photo",
+    image: "img/CuadroEjem.png",
+    alt: "Cuadro NFC ÓRBITA de 30×42 cm, con portada y tracklist, sobre pared blanca",
     badge: "Mediano",
   },
   {
@@ -80,7 +84,9 @@ const PRODUCTS = [
     price: 1479,
     note: "+ envío contra entrega",
     desc: "Formato de pared grande, para hacer del álbum el centro del cuarto. Marco reforzado por el mayor tamaño.",
-    type: "poster",
+    type: "photo",
+    image: "img/CuadroEjem.png",
+    alt: "Cuadro NFC ÓRBITA de 40×60 cm, con portada y tracklist, sobre pared blanca",
     badge: "Grande",
   },
   {
@@ -91,9 +97,21 @@ const PRODUCTS = [
     note: "+ envío contra entrega",
     desc: "Audífonos inalámbricos con estuche de carga, cordón incluido y logo Órbita grabado. Empaque tipo caja de regalo.",
     type: "photo",
-    image: "img/audifonos-tws.jpg",
+    image: "img/TWS1.png",
     alt: "Audífonos TWS Órbita, estuche blanco, sobre superficie oscura",
     badge: "N.º 04",
+  },
+  {
+    id: 8,
+    name: "Audífonos TWS Órbita Black",
+    category: "audio",
+    price: 300,
+    note: "+ envío contra entrega",
+    desc: "Audífonos inalámbricos con estuche de carga, cordón incluido y logo Órbita grabado. Empaque tipo caja de regalo.",
+    type: "photo",
+    image: "img/TWS2.png",
+    alt: "Audífonos TWS Órbita, estuche negro, sobre superficie oscura",
+    badge: "N.º 05",
   },
 ];
 
